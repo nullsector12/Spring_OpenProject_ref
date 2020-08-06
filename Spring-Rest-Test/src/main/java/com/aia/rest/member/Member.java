@@ -1,6 +1,6 @@
 package com.aia.rest.member;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class Member {
 
@@ -8,19 +8,21 @@ public class Member {
 	private String uid;
 	private String upw;
 	private String uname;
+	private Date regdate;
 
 
-	public Member(int idx, String uid, String upw, String uname) {
+	public Member(int idx, String uid, String upw, String uname, Date regdate) {
 		this.idx = idx;
 		this.uid = uid;
 		this.upw = upw;
 		this.uname = uname;
+		this.regdate = regdate;
 
 	}
 	
 	// MemberRegRequest -> Member 왜? why? 이유가 뭐지? 
 	public Member(String uid, String upw, String uname) {
-		this(0, uid, upw, uname);
+		this(0, uid, upw, uname, null);
 	}
 
 	public Member() {
@@ -58,6 +60,15 @@ public class Member {
 		this.uname = uname;
 	}
 
+	public Date getRegdate() {
+		return regdate;
+	}
+
+	public void setRegdate(Date regdate) {
+		this.regdate = regdate;
+	}
+	
+	
 
 
 

@@ -1,13 +1,4 @@
 INDEX VERSION 1.4+C:\Users\rlatm\Documents\GitHub\Spring_OpenProject_ref\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1808136668.index
-2728648710.index
-3472371397.index
-2728648710.index
-3175809491.index
-3141519269.index
-2560718617.index
-1508648051.index
-1185256474.index
 3351410602.index
-1331782446.index
-3317940078.index
+3175809491.index
+2560718617.index
