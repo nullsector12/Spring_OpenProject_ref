@@ -1,0 +1,29 @@
+package com.aia.op.member.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.aia.op.member.dao.MemberDaoInterface;
+
+@Service
+public class IdCheckService {
+
+	@Autowired
+	private MemberDaoInterface dao;
+
+	public String checkId(String uid) {
+
+		String result = "N";
+
+		int resultCnt = dao.selectById(uid);
+
+		if (resultCnt < 1) {
+			result = "Y";
+		}
+
+		
+		return result;
+
+	}
+
+}

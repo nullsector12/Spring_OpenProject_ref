@@ -1,0 +1,13 @@
+package com.aia.op.member.dao;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.aia.op.member.model.Member;
+
+public class MemberRowMapper implements RowMapper<Member> {
+	
+	public Member mapRow(ResultSet rs, int rowNum) throws SQLException {
+		
+	}
+
+}

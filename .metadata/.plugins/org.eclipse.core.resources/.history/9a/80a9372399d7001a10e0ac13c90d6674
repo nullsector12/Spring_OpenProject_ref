@@ -1,0 +1,19 @@
+package com.aia.op.member.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class MemberViewController {
+	
+	// http://localhost:8080/op/member/view/12
+	@RequestMapping("/member/view/{idx}")
+	public String getMemberInfo (
+			@PathVariable("idx") int idx
+			) {
+		
+		return "member/memberView";
+	}
+
+}

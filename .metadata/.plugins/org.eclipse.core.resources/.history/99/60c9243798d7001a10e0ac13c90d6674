@@ -1,0 +1,21 @@
+package com.aia.op.member.dao;
+
+import java.util.List;
+import java.util.Map;
+
+import com.aia.op.member.model.Member;
+
+public interface MemberDaoInterface {
+	
+	public Member selectByIdPw (String uid, String upw);
+
+	public int insertMember (Member member);
+	
+	//리스트 내 검색
+	public int totalCount(Map search);
+	
+	// 전체 리스트
+	public List<Member> selectList(Map search);
+	
+//	public int selectById (String uid);
+}

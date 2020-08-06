@@ -1,0 +1,23 @@
+package com.aia.rest.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@RestController
+@RequestMapping("/rest/v1")
+public class RestTestController {
+	
+	public Member getMember () {
+		
+		Member member =  new Member();
+		member.
+	}
+	
+	
+	public String testString () {
+		
+		return "ㅎㅇ";
+	}
+
+}

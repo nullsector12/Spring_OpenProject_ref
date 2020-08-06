@@ -1,0 +1,7 @@
+package com.aia.op.member.service;
+
+public class MemberXmlListService {
+	
+	public MemberXmlList getXmlList
+
+}

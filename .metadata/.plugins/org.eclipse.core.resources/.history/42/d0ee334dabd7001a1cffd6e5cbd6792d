@@ -1,0 +1,28 @@
+package com.aia.op.member.service;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.aia.op.member.dao.MemberDaoInterface;
+import com.aia.op.member.model.MemberXmlList;
+
+public class MemberXmlListService {
+	
+	
+	private MemberDaoInterface dao;
+	
+	@Autowired
+	private SqlSessionTemplate sessionTemplate;
+	
+	public MemberXmlList getXmlList() {
+		
+		dao = sessionTemplate.getMapper(MemberDaoInterface.class);
+		
+		MemberXmlList list = new MemberListXmlService();
+		
+		return new MemberXmlList(dao.selectAllListXml());
+		
+		
+	}
+
+}

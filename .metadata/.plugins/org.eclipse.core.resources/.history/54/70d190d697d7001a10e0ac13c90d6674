@@ -1,0 +1,15 @@
+package com.aia.op.member.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MemberViewController {
+	
+	public String getMemberInfo (
+			
+			) {
+		
+		return "member/memberView";
+	}
+
+}

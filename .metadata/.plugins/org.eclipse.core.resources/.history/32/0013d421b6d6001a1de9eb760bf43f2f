@@ -1,0 +1,12 @@
+package com.aia.op.member.dao;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.springframework.jdbc.core.RowMapper;
+
+import com.aia.op.member.model.Member;
+
+public interface MemberRowMapper extends RowMapper<Member> {
+
+}
