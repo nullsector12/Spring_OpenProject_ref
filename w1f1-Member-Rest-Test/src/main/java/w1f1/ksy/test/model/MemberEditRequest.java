@@ -55,7 +55,7 @@ public class MemberEditRequest {
 		return oldfile;
 	}
 
-	public void setOldFile(String oldfile) {
+	public void setOldfile(String oldfile) {
 		this.oldfile = oldfile;
 	}
 	

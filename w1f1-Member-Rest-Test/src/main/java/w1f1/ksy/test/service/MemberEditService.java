@@ -23,11 +23,13 @@ public class MemberEditService {
 	private MemberDao dao;
 	
 	@Autowired
-	private SqlSessionTemplate template;
+	SqlSessionTemplate template;
 	
 	public int editMember(
 			MemberEditRequest editRequest, 
 			HttpServletRequest request) {
+		
+		dao = template.getMapper(MemberDao.class);
 		
 		int result = 0;
 		
@@ -38,8 +40,6 @@ public class MemberEditService {
 
 
 		try {
-			
-			dao = template.getMapper(MemberDao.class);
 			
 			// 새로운 업데이트 파일이 있으면
 			// 1. 파일의 물리적인 저장 -> Member 객체의 photo 변수 데이터 설정

@@ -27,19 +27,19 @@ import w1f1.ksy.test.service.MemberViewService;
 public class MemberRestController {
 	
 	@Autowired
-	MemberListService listService;
+	private MemberListService listService;
 	
 	@Autowired
-	MemberRegService regService;
+	private MemberRegService regService;
 	
 	@Autowired
-	MemberViewService viewService;
+	private MemberViewService viewService;
 	
 	@Autowired
-	MemberEditService editService;
+	private MemberEditService editService;
 	
 	@Autowired
-	MemberDeleteService deleteService;
+	private MemberDeleteService deleteService;
 	
 	// 회원의 리스트 출력 => GET방식으로 Json 응답
 	@GetMapping // GET | /members
