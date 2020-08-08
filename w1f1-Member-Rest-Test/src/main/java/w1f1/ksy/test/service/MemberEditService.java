@@ -64,7 +64,7 @@ public class MemberEditService {
 
 				// 이전 페이지를 지운다.
 				// 이전 파일의 File 객체
-				File oldFile = new File(realPath, editRequest.getOldFile());
+				File oldFile = new File(realPath, editRequest.getOldfile());
 
 				// 파일이 존재하면
 				if (oldFile.exists()) {

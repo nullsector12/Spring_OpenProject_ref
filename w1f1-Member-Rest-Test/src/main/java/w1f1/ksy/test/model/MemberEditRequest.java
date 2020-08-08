@@ -9,7 +9,7 @@ public class MemberEditRequest {
 	private String upw;
 	private String uname;
 	private MultipartFile photo;
-	private String oldFile;
+	private String oldfile;
 
 	public int getIdx() {
 		return idx;
@@ -51,16 +51,16 @@ public class MemberEditRequest {
 		this.photo = photo;
 	}
 
-	public String getOldFile() {
-		return oldFile;
+	public String getOldfile() {
+		return oldfile;
 	}
 
-	public void setOldFile(String oldFile) {
-		this.oldFile = oldFile;
+	public void setOldFile(String oldfile) {
+		this.oldfile = oldfile;
 	}
 	
 	public Member toMember() {
-		return new Member(idx, uid, upw, uname, oldFile.length()>0?oldFile:null, null);
+		return new Member(idx, uid, upw, uname, oldfile.length()>0?oldfile:null, null);
 	}
 
 	
@@ -68,7 +68,7 @@ public class MemberEditRequest {
 	@Override
 	public String toString() {
 		return "MemberEditRequest [idx=" + idx + ", uid=" + uid + ", upw=" + upw + ", uname=" + uname + ", photo="
-				+ photo.getOriginalFilename() + ", oldFile=" + oldFile + "]";
+				+ photo.getOriginalFilename() + ", oldfile=" + oldfile + "]";
 	}
 	
 	

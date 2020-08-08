@@ -61,6 +61,9 @@ public class MemberRestController {
 			HttpServletRequest request
 			) {
 		
+		System.out.println("regRequest 확인 : " + regRequest);
+		System.out.println("ServletRequest 확인 : " + request);
+		
 		return regService.regMember(regRequest, request);
 	}
 
@@ -84,6 +87,7 @@ public class MemberRestController {
 			) {
 		
 		editRequest.setIdx(idx);
+		System.out.println("editRequest 확인 : " + editRequest);
 		
 		return editService.editMember(editRequest, request);
 	}

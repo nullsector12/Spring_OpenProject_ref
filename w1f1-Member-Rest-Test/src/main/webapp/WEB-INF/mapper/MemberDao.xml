@@ -29,7 +29,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<update id="editMember"
 		parameterType="w1f1.ksy.test.model.Member">
 		UPDATE project.member set 
-		uname=#{param1}, uphoto=#{param2} where idx=#{param3}
+		upw=#{upw}, uname=#{uname}, uphoto=#{uphoto} where idx=#{idx}
 	</update>
 	
 	<delete id="deleteMember">
