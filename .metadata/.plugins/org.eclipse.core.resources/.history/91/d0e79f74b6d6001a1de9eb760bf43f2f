@@ -1,7 +1,0 @@
-package com.aia.op.member.dao;
-
-import org.springframework.jdbc.core.RowMapper;
-
-public class MemberRowMapper implements RowMapper<T> {
-
-}

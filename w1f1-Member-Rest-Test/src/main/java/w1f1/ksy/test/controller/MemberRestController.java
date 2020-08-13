@@ -87,7 +87,6 @@ public class MemberRestController {
 			) {
 		
 		editRequest.setIdx(idx);
-		System.out.println("editRequest 확인 : " + editRequest);
 		
 		return editService.editMember(editRequest, request);
 	}

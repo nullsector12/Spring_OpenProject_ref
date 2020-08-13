@@ -75,14 +75,14 @@
 		}
 		
 		function editSubmit(){
-			var regFormData = new FormData();
-			regFormData.append('uid', $('#euid').val());
-			regFormData.append('upw', $('#eupw').val());
-			regFormData.append('uname', $('#euname').val());
+			var editFormData = new FormData();
+			editFormData.append('uid', $('#euid').val());
+			editFormData.append('upw', $('#eupw').val());
+			editFormData.append('uname', $('#euname').val());
 			// 파일 첨부
-			regFormData.append('oldfile', $('#oldfile').val());
+			editFormData.append('oldfile', $('#oldfile').val());
 			if($('#photo')[0].files[0] != null) {
-				regFormData.append('photo', $('#ephoto')[0].files[0]);
+				editFormData.append('photo', $('#ephoto')[0].files[0]);
 			}
 			
 				$.ajax({
@@ -90,7 +90,7 @@
 					type: 'POST',
 					processData: false, // 파일 전송시 필수
 					contentType: false, // multipart/ form-data
-					data: regFormData,
+					data: editFormData,
 					success: function (data) {
 						alert(data);
 						memberList();

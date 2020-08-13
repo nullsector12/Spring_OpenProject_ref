@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="w1f1-Member-Rest-Test"/>
+<aop-project name="Spring-OpenProject-ref"/>
 <aop-project name="Spring-Rest-Test"/>
 <aop-project name="Spring-OpenProject"/>
 </aop-reference-model>
